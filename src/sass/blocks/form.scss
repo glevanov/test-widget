@@ -1,0 +1,16 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-text-default;
+}
+
+.form__input {
+  font: inherit;
+}
+
+.form__submit {
+  color: $color-text-contrast;
+}

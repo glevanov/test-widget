@@ -1,0 +1,89 @@
+.widget {
+  display: block;
+  max-width: $widget-width;
+  width: 100%;
+  margin: 30px auto;
+
+  font-family: $font-default;
+}
+
+.widget__header {
+  position: relative;
+
+  background-color: $color-primary;
+}
+
+.widget__main {
+  background-color: #ffffff;
+}
+
+.widget__footer {
+  background-color: $color-primary;
+}
+
+.widget__heading {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  color: $color-text-contrast;
+}
+
+.widget__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  display: block;
+  padding: 5px;
+
+  font-size: 10px;
+  line-height: 13px;
+  color: $color-text-contrast;
+
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.widget__order-number {
+  display: inline;
+
+  color: $color-accent;
+}
+
+.widget__discount {
+  font-size: 25px;
+  line-height: 28px;
+  font-weight: bold;
+  color: $color-accent;
+}
+
+.widget__name {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.widget__text {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.widget__promo-link {
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-primary;
+}
+
+.widget__rules-link {
+  font-size: 12px;
+  line-height: 18px;
+  color: $color-text-contrast;
+}
+
+.widget__terms-link {
+  font-size: 12px;
+  line-height: 18px;
+  color: $color-text-contrast;
+}

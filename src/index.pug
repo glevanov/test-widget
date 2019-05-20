@@ -15,22 +15,27 @@ html(lang="ru")
     section.widget
       header.widget__header
         h2.visually-hidden Подтверждение заказа
-        button.widget__close(aria-label="Закрыть окно")
-        p.widget__heading Ваш заказ №1890998 принят и находится в обработке
-      main.widget__body
+        button.widget__close(aria-label="Закрыть окно") x
+        p.widget__heading
+          | Ваш заказ
+          |
+          span.widget__order-number №1890998
+          |
+          | принят и находится в обработке
+      main.widget__main
         p.widget__discount 10%
         p.widget__name Михаил Иванович!
         p.widget__text подарите друзьям скидку в&nbsp;«CompanyName» и получите скидку в подарок, за каждого друга
         ul.social.widget__social
           li.social__item
             a.social__link.social__link--ok(aria-label="Одноклассники")
-              img.social__link.social__link--ok(src="img/ok.svg" alt="Одноклассники" width="14" height="24")
+              img.social__icon.social__icon--ok(src="img/ok.svg" alt="Одноклассники" width="14" height="24")
           li.social__item
             a.social__link.social__link--facebook(aria-label="Фейсбук")
-              img.social__link.social__link--facebook(src="img/fb.svg" alt="Фейсбук" width="13" height="25")
+              img.social__icon.social__icon--facebook(src="img/fb.svg" alt="Фейсбук" width="13" height="25")
           li.social__item
             a.social__link.social__link--twitter(aria-label="Твиттер")
-              img.social__link.social__link--twitter(src="img/tw.svg" alt="Твиттер" width="22" height="17")
+              img.social__icon.social__icon--twitter(src="img/tw.svg" alt="Твиттер" width="22" height="17")
           li.social__item
             a.social__link.social__link--vk(aria-label="Вконтакте")
               picture
