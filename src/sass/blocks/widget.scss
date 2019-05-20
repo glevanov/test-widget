@@ -1,16 +1,14 @@
 .widget {
   display: block;
+  font-family: $font-default;
+  margin: 30px auto;
   max-width: $widget-width;
   width: 100%;
-  margin: 30px auto;
-
-  font-family: $font-default;
 }
 
 .widget__header {
-  position: relative;
-
   background-color: $color-primary;
+  position: relative;
 }
 
 .widget__main {
@@ -22,47 +20,43 @@
 }
 
 .widget__heading {
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: bold;
   color: $color-text-contrast;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
 }
 
 .widget__close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-
-  display: block;
-  padding: 5px;
-
-  font-size: 10px;
-  line-height: 13px;
-  color: $color-text-contrast;
-
   background: transparent;
   border: none;
-
+  color: $color-text-contrast;
   cursor: pointer;
+  display: block;
+  font-size: 10px;
+  line-height: 13px;
+  padding: 5px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 .widget__order-number {
-  display: inline;
 
   color: $color-accent;
+  display: inline;
 }
 
 .widget__discount {
-  font-size: 25px;
-  line-height: 28px;
-  font-weight: bold;
   color: $color-accent;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 28px;
 }
 
 .widget__name {
   font-size: 18px;
-  line-height: 18px;
   font-weight: bold;
+  line-height: 18px;
 }
 
 .widget__text {
@@ -71,19 +65,19 @@
 }
 
 .widget__promo-link {
+  color: $color-primary;
   font-size: 14px;
   line-height: 18px;
-  color: $color-primary;
 }
 
 .widget__rules-link {
+  color: $color-text-contrast;
   font-size: 12px;
   line-height: 18px;
-  color: $color-text-contrast;
 }
 
 .widget__terms-link {
+  color: $color-text-contrast;
   font-size: 12px;
   line-height: 18px;
-  color: $color-text-contrast;
 }
