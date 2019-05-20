@@ -1,10 +1,50 @@
 doctype html
-html(lang="en")
+html(lang="ru")
   head
     meta(charset="utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1")
-    title Boilerplate
+    title Виджет
     link(rel="stylesheet" type="text/css" href="style.css")
+    link(rel="preload" href='fonts/ALSSchlangesans-Black.woff2' as='font' crossorigin='anonymous')
+    link(rel="preload" href='fonts/ALSSchlangesans-Black.woff' as='font' crossorigin='anonymous')
+    link(rel="preload" href='fonts/RotondaC.woff2' as='font' crossorigin='anonymous')
+    link(rel="preload" href='fonts/RotondaC.woff' as='font' crossorigin='anonymous')
+    link(rel="preload" href='fonts/RotondaCBold.woff2' as='font' crossorigin='anonymous')
+    link(rel="preload" href='fonts/RotondaCBold.woff' as='font' crossorigin='anonymous')
   body
-    h1 Gulp boilerplate
-  script(type="text/javascript" src="index.js" async)
+    section.widget
+      header.widget__header
+        h2.visually-hidden Подтверждение заказа
+        button.widget__close(aria-label="Закрыть окно")
+        p.widget__heading Ваш заказ №1890998 принят и находится в обработке
+      main.widget__body
+        p.widget__discount 10%
+        p.widget__name Михаил Иванович!
+        p.widget__text подарите друзьям скидку в&nbsp;«CompanyName» и получите скидку в подарок, за каждого друга
+        ul.social.widget__social
+          li.social__item
+            a.social__link.social__link--ok(aria-label="Одноклассники")
+              img.social__link.social__link--ok(src="img/ok.svg" alt="Одноклассники" width="14" height="24")
+          li.social__item
+            a.social__link.social__link--facebook(aria-label="Фейсбук")
+              img.social__link.social__link--facebook(src="img/fb.svg" alt="Фейсбук" width="13" height="25")
+          li.social__item
+            a.social__link.social__link--twitter(aria-label="Твиттер")
+              img.social__link.social__link--twitter(src="img/tw.svg" alt="Твиттер" width="22" height="17")
+          li.social__item
+            a.social__link.social__link--vk(aria-label="Вконтакте")
+              picture
+                source(srcset="img/vk.webp" type="image/webp")
+                img.social__icon.social__icon--vk(src="img/vk.png" alt="Вконтакте" width="17" height="22")
+        form.form.widget__form
+          input.form__input(type="email" placeholder="E-mail друзей")
+          textarea.form__textarea
+            | Хороший ассортимент и цены в %site_name%. Только что после покупки  подарили скидку %friend_reward% для моих друзей!
+            |
+            | Времени мало, Вперёд!
+          button.form__submit Отправить
+      footer.widget__footer
+        p.widget__promo-link http://floctoryblablabla/#########
+        a.widget__rules-link Правила акции
+        a.widget__terms-link Пользовательское соглашение
+

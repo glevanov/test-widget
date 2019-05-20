@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "RotondaC";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("RotondaC"),
+  local("RotondaC-Regular"),
+  url("../fonts/RotondaC.woff2") format("woff2"),
+  url("../fonts/RotondaC.woff") format("woff");
+}
+
+@font-face {
+  font-family: "RotondaC";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("RotondaC Bold"),
+  local("RotondaC-Bold"),
+  url("../fonts/RotondaCBold.woff2") format("woff2"),
+  url("../fonts/RotondaCBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ALSSchlangesans-Black";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("ALSSchlangesans-Black"),
+  local("ALSSchlangesans-Black-Regular"),
+  url("../fonts/ALSSchlangesans-Black.woff2") format("woff2"),
+  url("../fonts/ALSSchlangesans-Black.woff") format("woff");
+}
