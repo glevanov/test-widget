@@ -18,15 +18,16 @@ html(lang="ru")
     section.widget
       header.widget__header
         h2.visually-hidden Подтверждение заказа
-        button.widget__close(aria-label="Закрыть окно") x
+        button.widget__close(aria-label="Закрыть окно")
         p.widget__heading
           | Ваш заказ №
           span.widget__order-number 1890998
           |
           | принят и находится в обработке
       main.widget__main
-        p.widget__discount 10%
-        p.widget__name Михаил Иванович!
+        div.widget__name-group
+          p.widget__name Михаил Иванович!
+          p.widget__discount 10%
         p.widget__text подарите друзьям скидку в&nbsp;«CompanyName» и получите скидку в&nbsp;подарок, за каждого друга
         +social('widget__social')
         +form('widget__form')
