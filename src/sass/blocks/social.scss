@@ -5,6 +5,14 @@
   padding: 0;
 }
 
+.social__item {
+  margin-right: 16px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
 .social__link {
   align-items: center;
   border-radius: 50%;
