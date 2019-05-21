@@ -1,8 +1,7 @@
 .widget {
   background-color: $color-primary;
   border: 1px solid $color-border;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-radius: 15px;
   box-sizing: border-box;
   color: $color-text-contrast;
   display: block;
@@ -14,13 +13,14 @@
 
 .widget__header {
   border-bottom: 1px solid $color-border;
-  padding: 10px 17px;
+  letter-spacing: 0.6px;
+  padding: 16px 17px 12px;
 }
 
 .widget__main {
   background-color: #ffffff;
   color: $color-text-default;
-  padding: 15px 17px;
+  padding: 29px 17px 18px;
   position: relative;
 }
 
@@ -28,7 +28,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 6px 17px;
+  padding: 22px 17px 12px;
 }
 
 .widget__heading {
@@ -67,6 +67,7 @@
   box-sizing: border-box;
   color: $color-accent;
   display: flex;
+  font-family: $font-accent;
   font-size: 25px;
   font-weight: bold;
   justify-content: center;
@@ -80,16 +81,27 @@
 }
 
 .widget__name {
+  color: $color-primary;
+  font-family: $font-accent;
   font-size: 18px;
   font-weight: bold;
+  letter-spacing: 0.5px;
   line-height: 18px;
   margin: 0;
+  margin-bottom: 20px;
+  width: calc(100% - 95px);
 }
 
 .widget__text {
   font-size: 14px;
+  letter-spacing: 0.4px;
   line-height: 18px;
   margin: 0;
+  margin-bottom: 18px;
+}
+
+.widget__social {
+  margin-bottom: 20px;
 }
 
 .widget__promo-link {
@@ -99,8 +111,10 @@
   box-sizing: border-box;
   color: $color-primary;
   font-size: 14px;
+  letter-spacing: 0.6px;
   line-height: 18px;
   margin: 0;
+  margin-bottom: 23px;
   padding: 11.5px;
   text-align: center;
   width: 100%;
@@ -109,11 +123,34 @@
 .widget__rules-link {
   color: $color-text-contrast;
   font-size: 12px;
+  letter-spacing: 0.4px;
   line-height: 18px;
+  margin-bottom: 18px;
+  position: relative;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+
+  &:after {
+    background-image: url("../img/icon-triangle.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    content: "";
+    display: inline-block;
+    height: 6px;
+    margin-left: 10px;
+    width: 9px;
+  }
 }
 
 .widget__terms-link {
   color: $color-text-contrast;
   font-size: 12px;
+  letter-spacing: 0.4px;
   line-height: 18px;
+  text-decoration: underline;
+  text-transform: uppercase;
 }

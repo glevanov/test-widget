@@ -17,39 +17,38 @@ html(lang="ru")
         h2.visually-hidden Подтверждение заказа
         button.widget__close(aria-label="Закрыть окно") x
         p.widget__heading
-          | Ваш заказ
-          |
-          span.widget__order-number №1890998
+          | Ваш заказ №
+          span.widget__order-number 1890998
           |
           | принят и находится в обработке
       main.widget__main
         p.widget__discount 10%
         p.widget__name Михаил Иванович!
-        p.widget__text подарите друзьям скидку в&nbsp;«CompanyName» и получите скидку в подарок, за каждого друга
+        p.widget__text подарите друзьям скидку в&nbsp;«CompanyName» и получите скидку в&nbsp;подарок, за каждого друга
         ul.social.widget__social
           li.social__item
-            a.social__link.social__link--ok(aria-label="Одноклассники")
-              img.social__icon.social__icon--ok(src="img/ok.svg" alt="Одноклассники" width="14" height="24")
+            a.social__link.social__link--ok(href="https://ok.ru/" aria-label="Одноклассники")
+              img.social__icon.social__icon--ok(src="img/logo-ok.svg" alt="Одноклассники" width="14" height="24")
           li.social__item
-            a.social__link.social__link--facebook(aria-label="Фейсбук")
-              img.social__icon.social__icon--facebook(src="img/fb.svg" alt="Фейсбук" width="13" height="25")
+            a.social__link.social__link--facebook(href="https://www.facebook.com/" aria-label="Фейсбук")
+              img.social__icon.social__icon--facebook(src="img/logo-fb.svg" alt="Фейсбук" width="13" height="25")
           li.social__item
-            a.social__link.social__link--twitter(aria-label="Твиттер")
-              img.social__icon.social__icon--twitter(src="img/tw.svg" alt="Твиттер" width="22" height="17")
+            a.social__link.social__link--twitter(href="https://twitter.com/" aria-label="Твиттер")
+              img.social__icon.social__icon--twitter(src="img/logo-tw.svg" alt="Твиттер" width="22" height="17")
           li.social__item
-            a.social__link.social__link--vk(aria-label="Вконтакте")
+            a.social__link.social__link--vk(href="https://vk.com/" aria-label="Вконтакте")
               picture
-                source(srcset="img/vk.webp" type="image/webp")
-                img.social__icon.social__icon--vk(src="img/vk.png" alt="Вконтакте" width="17" height="22")
+                source(srcset="img/logo-vk.webp" type="image/webp")
+                img.social__icon.social__icon--vk(src="img/logo-vk.png" alt="Вконтакте" width="17" height="22")
         form.form.widget__form
           input.form__input(type="email" placeholder="E-mail друзей")
-          textarea.form__textarea(rows="6")
-            | Хороший ассортимент и цены в %site_name%. Только что после покупки  подарили скидку %friend_reward% для моих друзей!
+          textarea.form__textarea(rows="7")
+            | Хороший ассортимент и цены в&nbsp;%site_name%. Только что после покупки  подарили скидку %friend_reward% для моих друзей!
             |
             | Времени мало, Вперёд!
           button.button.form__submit Отправить
       footer.widget__footer
         p.widget__promo-link http://floctoryblablabla/#########
-        a.widget__rules-link Правила акции
-        a.widget__terms-link Пользовательское соглашение
+        a.widget__rules-link(href="#") Правила акции
+        a.widget__terms-link(href="#") Пользовательское соглашение
 

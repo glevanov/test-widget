@@ -24,19 +24,60 @@
   line-height: 0;
   width: 52px;
 
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+
   &--ok {
     border-color: #ef8116;
+
+    &:focus,
+    &:hover {
+      box-shadow: 0 0 5px 1px #ef8116;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   &--facebook {
     border-color: #414594;
+
+    &:focus,
+    &:hover {
+      box-shadow: 0 0 5px 1px #414594;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   &--twitter {
     border-color: #3aaae3;
+
+    &:focus,
+    &:hover {
+      box-shadow: 0 0 5px 1px #3aaae3;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   &--vk {
     border-color: #416da1;
+
+    &:focus,
+    &:hover {
+      box-shadow: 0 0 5px 1px #416da1;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }
