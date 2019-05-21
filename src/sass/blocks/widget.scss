@@ -43,7 +43,7 @@
 
 .widget__close {
   background: transparent;
-  background-image: url("../img/icon-close.png");
+  background-image: url("img/icon-close.png");
   background-position: center;
   background-repeat: no-repeat;
   border: none;
@@ -143,7 +143,7 @@
   }
 
   &:after {
-    background-image: url("../img/icon-triangle.svg");
+    background-image: url("img/icon-triangle.svg");
     background-position: center;
     background-repeat: no-repeat;
     content: "";
