@@ -1,0 +1,2 @@
+!function(){"use strict";console.log("Init")}();
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9pbmRleC5qcyJdLCJuYW1lcyI6WyJjb25zb2xlIiwibG9nIl0sIm1hcHBpbmdzIjoieUJBQUFBLFFBQVFDLElBQUkiLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zb2xlLmxvZygnSW5pdCcpXG4iXX0=
