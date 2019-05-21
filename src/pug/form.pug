@@ -1,0 +1,10 @@
+include ./button
+
+mixin form(className)
+  form(class=className).form
+    input.form__input(type="email" placeholder="E-mail друзей")
+    textarea.form__textarea(rows="7")
+      | Хороший ассортимент и цены в&nbsp;%site_name%. Только что после покупки  подарили скидку %friend_reward% для моих друзей!
+      |
+      | Времени мало, Вперёд!
+    +button('form__submit', 'Отправить')

@@ -76,7 +76,8 @@ gulp.task('server', function () {
 gulp.task('copy', function () {
   return gulp.src([
       'src/fonts/**/*.{woff,woff2,eot,ttf,svg}',
-      'src/img/**'
+      'src/img/**',
+      'src/picturefill.min.js'
     ],
     {
       base: 'src'

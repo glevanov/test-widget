@@ -1,3 +1,6 @@
+include ./pug/form
+include ./pug/social
+
 doctype html
 html(lang="ru")
   head
@@ -25,30 +28,10 @@ html(lang="ru")
         p.widget__discount 10%
         p.widget__name Михаил Иванович!
         p.widget__text подарите друзьям скидку в&nbsp;«CompanyName» и получите скидку в&nbsp;подарок, за каждого друга
-        ul.social.widget__social
-          li.social__item
-            a.social__link.social__link--ok(href="https://ok.ru/" aria-label="Одноклассники")
-              img.social__icon.social__icon--ok(src="img/logo-ok.svg" alt="Одноклассники" width="14" height="24")
-          li.social__item
-            a.social__link.social__link--facebook(href="https://www.facebook.com/" aria-label="Фейсбук")
-              img.social__icon.social__icon--facebook(src="img/logo-fb.svg" alt="Фейсбук" width="13" height="25")
-          li.social__item
-            a.social__link.social__link--twitter(href="https://twitter.com/" aria-label="Твиттер")
-              img.social__icon.social__icon--twitter(src="img/logo-tw.svg" alt="Твиттер" width="22" height="17")
-          li.social__item
-            a.social__link.social__link--vk(href="https://vk.com/" aria-label="Вконтакте")
-              picture
-                source(srcset="img/logo-vk.webp" type="image/webp")
-                img.social__icon.social__icon--vk(src="img/logo-vk.png" alt="Вконтакте" width="17" height="22")
-        form.form.widget__form
-          input.form__input(type="email" placeholder="E-mail друзей")
-          textarea.form__textarea(rows="7")
-            | Хороший ассортимент и цены в&nbsp;%site_name%. Только что после покупки  подарили скидку %friend_reward% для моих друзей!
-            |
-            | Времени мало, Вперёд!
-          button.button.form__submit Отправить
+        +social('widget__social')
+        +form('widget__form')
       footer.widget__footer
         p.widget__promo-link http://floctoryblablabla/#########
         a.widget__rules-link(href="#") Правила акции
         a.widget__terms-link(href="#") Пользовательское соглашение
-
+  script(type="text/javascript" src="picturefill.min.js")

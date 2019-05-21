@@ -1,0 +1,16 @@
+mixin form(className)
+ul(class=className).social
+  li.social__item
+    a.social__link.social__link--ok(href="https://ok.ru/" aria-label="Одноклассники")
+      img.social__icon.social__icon--ok(src="img/logo-ok.svg" alt="Одноклассники" width="14" height="24")
+  li.social__item
+    a.social__link.social__link--facebook(href="https://www.facebook.com/" aria-label="Фейсбук")
+      img.social__icon.social__icon--facebook(src="img/logo-fb.svg" alt="Фейсбук" width="13" height="25")
+  li.social__item
+    a.social__link.social__link--twitter(href="https://twitter.com/" aria-label="Твиттер")
+      img.social__icon.social__icon--twitter(src="img/logo-tw.svg" alt="Твиттер" width="22" height="17")
+  li.social__item
+    a.social__link.social__link--vk(href="https://vk.com/" aria-label="Вконтакте")
+      picture
+        source(srcset="img/logo-vk.webp" type="image/webp")
+        img.social__icon.social__icon--vk(src="img/logo-vk.png" alt="Вконтакте" width="17" height="22")
